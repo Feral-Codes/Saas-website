@@ -123,3 +123,41 @@ nav {
    bottom: -1.875rem;
    right: var(--size-100);
 }
+
+/* key benefits amd cards */
+.block-text {
+   text-align: center;
+}
+
+.block-text h2 {
+   font-weight: 600;
+   padding-top: var(--size-100);
+   margin: 0;
+}
+
+.block-text p {
+   padding: var(--size-14) 0;
+}
+
+.card-container {
+   display: flex;
+   justify-content: space-around;
+   margin: var(--size-50) 0;
+}
+
+.key-card-container {
+   padding: var(--size-10);
+   border: 1px solid transparent;
+   max-width: 200px;
+   box-shadow: 0px 0px 10px rgba(106, 106, 106 , .5 );
+
+}
+
+.key-img {
+   width: 40px;
+   height: 40px;
+}
+
+.key-card-container h3 {
+   color: var(--font-color-dark)
+}
