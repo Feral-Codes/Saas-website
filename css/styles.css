@@ -45,3 +45,81 @@ nav {
 .header-buttons .btn { margin-right: var(--size-20); }
 
 .header-buttons > a { color: var(--font-color-blue); }
+
+/* bottom of header */
+.bottom-header {display: flex;}
+
+.header-text {margin-right: auto;}
+
+.company-icons-container{
+   width: 31.25rem;
+   position: relative;
+}
+
+.logo-circle {
+   width: 3.75rem;
+   height: 3.75rem;
+   border-radius: 50%;
+   background-color: var(--white);
+   box-shadow: 0px 0px 10px grey;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo-resize {
+   width: var(--size-40);
+   height: var(--size-40);
+}
+
+.icons-resize {
+   width: var(--size-10);
+   height: var(--size-10);
+}
+
+.logo-icons {
+   width: var(--size-30);
+   height: var(--size-30);
+}
+
+.logo-1 {
+   position: absolute;
+   top: -4.375rem;
+   left: -3.125rem;
+}
+
+.logo-2 {
+   position: absolute;
+   top: -3.75rem;
+   left: 5.625rem;
+}
+
+.logo-3 {
+   position: absolute;
+   top: -3.75rem;
+   right: var(--size-50);
+}
+
+.logo-4 {
+   position: absolute;
+   top: 4.375rem;
+   left: -4.375rem;
+}
+
+.logo-5 {
+   position: absolute;
+   top: 4.375rem;
+   left: 12.5rem;
+}
+
+.logo-6 {
+   position: absolute;
+   bottom: -0.625rem;
+   left: var(--size-100);
+}
+
+.logo-7 {
+   position: absolute;
+   bottom: -1.875rem;
+   right: var(--size-100);
+}
