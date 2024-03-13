@@ -133,6 +133,7 @@ nav {
 }
 
 /* key benefits amd cards */
+section { margin: var(--size-100) 0; }
 .block-text {
    text-align: center;
 }
@@ -174,9 +175,56 @@ nav {
 /* front banner */
 .front-banner .contrast-container {
    background-color: var(--font-color-contrast);
-}
-
-.contrast-container {
    display: flex;
-
+   padding-left: var(--size-30);
+   padding-top: var(--size-150);
+   gap: var(--size-20);
+   justify-content: space-between;
 }
+
+.front-banner h2 {
+   font-weight: 600;
+}
+
+.front-banner .btn {
+   margin-top: var(--size-20);
+   margin-left: var(--size-40);
+   float: left;
+}
+
+/* Why front */
+.why-front .block-text h2 {
+   padding-top: 0;
+}
+
+.big-dot {
+   width: 50px;
+   height: 50px;
+   background-color: var(--font-color-contrast);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.lil-dot {
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
+   background-color: var(--font-color-blue);
+}
+
+.line {
+   width: 150px;
+   height: 0;
+   border: 1px solid var(--font-color-contrast);
+}
+
+.dots-on-dots {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+}
+
+
