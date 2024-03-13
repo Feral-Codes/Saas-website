@@ -175,3 +175,8 @@ nav {
 .front-banner .contrast-container {
    background-color: var(--font-color-contrast);
 }
+
+.contrast-container {
+   display: flex;
+
+}
