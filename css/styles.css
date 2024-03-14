@@ -304,13 +304,49 @@ section { margin: var(--size-100) 0; }
    left: 30px;
 }
 
+.right-showcase {
+   padding-top: var(--size-50);
+}
+
 .hubspot-img img {
-   width: 200px;
-   height: 150px;
+   width: 150px;
+   height: 100px;
+   margin-bottom: var(--size-20);
 }
 
 .right-showcase span {
    font-size: var(--size-20);
    font-weight: 600;
    color: var(--font-color-dark);
+}
+
+.right-showcase h3 {
+   margin-bottom: 0;
+   margin-top: var(--size-50);
+   color: var(--font-color-dark);
+   font-size: var(--size-18);
+   font-weight: 600;
+}
+
+.right-showcase p {
+   color: var(--font-color-base);
+   font-weight: 600;
+}
+
+/* Worlds-best */
+.company-titles {
+   display: flex;
+   justify-content: space-between;
+}
+
+.worlds-best .contrast-container h2 {
+   text-align: center;
+   color: var(--font-color-base);
+   font-weight: 600;
+   margin-bottom: var(--size-50);
+}
+
+.company-wrapper {
+   width: 150px;
+   height: 150px;
 }
