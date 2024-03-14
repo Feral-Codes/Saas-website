@@ -228,8 +228,8 @@ section { margin: var(--size-100) 0; }
 
 .line {
    width: var(--size-100);
-   height: 1px;
-   background-color: var(--font-color-base);
+   height: 2px;
+   background-color: var(--font-color-contrast);
 }
 
 .line-dot {
@@ -240,6 +240,8 @@ section { margin: var(--size-100) 0; }
 
 .the-dot .p {
    margin-top: var(--size-14);
+   color: var(--font-color-dark);
+   font-weight: 500;
 }
 
 .hidden-line {
@@ -269,39 +271,46 @@ section { margin: var(--size-100) 0; }
 .fa-solid { font-size: var(--size-20); }
 
 /* hub-spot */
-.hub-spot .contrast-container{
-   display: grid;
-   grid-template-columns: 600px 1fr;
-}   
+
+.hub-spot .showcase {
+   display: flex;
+   justify-content: space-evenly;
+}
 
 .profile-container {
+   min-width: 500px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.img-container {
    position: relative;
-   max-width: 600px;
-   height: auto;
+   min-width: 500px;
+   min-height: 600px;
 }
 
-.woman-three img{
-   /* object-fit: contain; */
-   z-index: 100;
-   width: 450px;
-   height: 550px;
+.abstract-dots {
+   width: 250px;
+   height: 250px;
    position: absolute;
-   top: 10px;
-   left: 120px;
+   top: 100px;
 }
 
-.abstract-dots img {
-   /* object-fit: contain; */
+.woman-three {
    width: 400px;
-   height: 550px;
+   height: 500px;
    position: absolute;
-   bottom: 0px;
-   left: 0px;
+   left: 30px;
 }
 
-/* .hubspot-img img {
-   width: 75px;
-   height: 50px;
-} */
+.hubspot-img img {
+   width: 200px;
+   height: 150px;
+}
 
-
+.right-showcase span {
+   font-size: var(--size-20);
+   font-weight: 600;
+   color: var(--font-color-dark);
+}
