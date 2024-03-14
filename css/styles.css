@@ -214,47 +214,37 @@ section { margin: var(--size-100) 0; }
    background-color: var(--font-color-blue);
 }
 
-.line {
-   width: 150px;
-   height: 0;
-   border: 1px solid var(--font-color-contrast);
+.dots-on-dots {
+   display: flex;
+   justify-content: center;
 }
 
-/* .dots-on-dots {
+.the-dot {
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+}
+
+
+.line {
+   width: var(--size-100);
+   height: 1px;
+   background-color: var(--font-color-base);
+}
+
+.line-dot {
    display: flex;
    align-items: center;
-   justify-content: center;
    gap: 5px;
 }
 
-.dots-p {
-   display: flex;
-   justify-content: space-evenly;
-   max-width: 950px;
-   margin: 0 auto;
-} */
-
-.dots-on-dots {
-   display: grid;
-   grid-template-areas: 
-   "dot1 line1 dot2 line2 dot3 line3 dot4"
-   "p1 . p2 . p3 . p4 ";
-   justify-content: center;
-   align-items: center;
+.the-dot .p {
+   margin-top: var(--size-14);
 }
 
-.dot1 { grid-area: dot1;}
-.dot2 { grid-area: dot2;}
-.dot3 { grid-area: dot3;}
-.dot4 { grid-area: dot4;}
-.line1 { grid-area: line1;}
-.line2 { grid-area: line2;}
-.line3 { grid-area: line3;}
-.p1 { grid-area: p1;}
-.p2 { grid-area: p2;}
-.p3 { grid-area: p3;}
-.p4 { grid-area: p4;}
-
+.hidden-line {
+   background-color: transparent;
+}
 
 /* banner2 */
 .banner-2 .contrast-container {
