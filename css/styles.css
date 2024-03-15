@@ -334,6 +334,8 @@ section { margin: var(--size-100) 0; }
 }
 
 /* Worlds-best */
+.worlds-best,
+.pricing { margin: 0; }
 .company-titles {
    display: flex;
    justify-content: space-between;
@@ -349,4 +351,47 @@ section { margin: var(--size-100) 0; }
 .company-wrapper {
    width: 150px;
    height: 150px;
+}
+
+/* pricing */
+.pricing .block-text {
+   text-align: center;
+}
+
+.price-card {
+   max-width: 300px;
+   box-shadow: 0px 0px 20px rgba(106, 106, 106 , .3 );
+   padding: 1.5625rem;
+}
+
+.price {
+   display: flex;
+   align-items: center;
+}
+
+.price h4 {
+   font-size: var(--size-50);
+   font-weight: 500;
+   color: var(--font-color-dark);
+   margin: var(--size-20) 0.3125rem var(--size-10) 0;
+}
+
+.price span {
+   margin-top: 2.1875rem;
+   font-size: var(--size-18);
+}
+
+.price-card p {
+   margin: var(--size-20) 0;
+}
+
+.price-card .btn {
+   margin-top: var(--size-16);
+   margin-left: -0.125rem;
+}
+
+.price-card .small-text {
+   font-size: var(--size-10);
+   margin-top: 0;
+   padding-left: 0.5rem;
 }
