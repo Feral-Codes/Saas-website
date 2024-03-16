@@ -1,4 +1,4 @@
-header .container {
+ header .container {
    padding: var(--size-20);
    background-image: url(/assets/backgrounds/background-top.svg);
 }
@@ -394,4 +394,5 @@ section { margin: var(--size-100) 0; }
    font-size: var(--size-10);
    margin-top: 0;
    padding-left: 0.5rem;
-}
+} 
+
