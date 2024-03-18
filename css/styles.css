@@ -433,3 +433,83 @@ section { margin: var(--size-100) 0; }
 /* Hire us */
 .hire-us { background-color: rgb(0,46,99) }
 
+.testimonial {
+   max-width: 500px;
+}
+
+.hire-us h4 {
+   font-size: var(--size-20);
+   color: var(--white);
+   margin-bottom: 0;
+   padding-top: var(--size-50)
+}
+
+.hire-us p { padding-bottom: var(--size-16); }
+
+.testimonial .quote { padding: var(--size-20) 0;}
+
+.testimonial h5 {
+   font-size: var(--size-18);
+   margin-top: var(--size-10);
+   margin-bottom: 0;
+}
+
+.testimonial .white {
+   color: var(--white);
+}
+
+.testimonial-portriats {
+   display: flex;
+   gap: var(--size-30);
+}
+
+.testimonial-img {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+
+.hire-us .contrast-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+form {
+   background-color: var(--white);
+   border: 1px solid transparent;
+   border-radius: 10px;
+   margin: var(--size-30);
+   max-width: 500px;
+}
+
+.form h3 {
+   color: black;
+   font-weight: 600;
+}
+
+.form-top {
+   /* display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(3, 1fr);*/
+   display: flex;
+   flex-wrap: wrap;
+   gap: var(--size-10);
+} 
+
+.input-custom {
+   width: 100px;
+}
+
+/* .select-one {
+   margin-left: var(--size-20);
+} */
+
+/* .form input {
+   margin: var(--size-10);
+   width: 200px;
+} */
+
+/* .form select {
+   width: 200px;
+} */
