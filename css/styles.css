@@ -471,7 +471,8 @@ section { margin: var(--size-100) 0; }
 
 .hire-us .contrast-container {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+   gap: var(--size-150);
    align-items: flex-start;
 }
 
@@ -480,7 +481,7 @@ form {
    border: 1px solid transparent;
    border-radius: 10px;
    margin: var(--size-30);
-   max-width: 500px;
+   max-width: 400px;
 }
 
 .form h3 {
@@ -489,27 +490,15 @@ form {
 }
 
 .form-top {
-   /* display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(3, 1fr);*/
    display: flex;
    flex-wrap: wrap;
-   gap: var(--size-10);
-} 
-
-.input-custom {
-   width: 100px;
+   gap: var(--size-16);
+   justify-content: center;
 }
 
-/* .select-one {
-   margin-left: var(--size-20);
-} */
+.form-top input {
+   height: 30px;
+   border: 1.5px solid var(--font-color-light);
+   border-radius: 5px;
+}
 
-/* .form input {
-   margin: var(--size-10);
-   width: 200px;
-} */
-
-/* .form select {
-   width: 200px;
-} */

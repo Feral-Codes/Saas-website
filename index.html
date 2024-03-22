@@ -348,28 +348,36 @@
                </div>
             </div>
             <div class="form">
-               <form action="">
+               <form action="" target="_blank" method="post">
                   <h3>Fill out the form and we'll be in touch as soon as possible</h3>
                   <div class="form-top">
-                     <input type="text" placeholder="First Name" for="first name" id="firstName" class="input-custom">
-                     <input type="text" placeholder="Last Name" for="last name" id="last" class="input-custom">
-                     <input type="text" placeholder="First Name" for="first name" id="firstName" class="input-custom">
-                     <input type="text" placeholder="Last Name" for="last name" id="lastName" class="input-custom">
-                     <select name="budget" id="budget" value="budget" class="select-one input-custom">
-                        <option value="budget">Budget</option>
+                     <input type="text" placeholder="First Name" id="firstName" class="input-custom" required>
+                     <input type="text" placeholder="Last Name" id="last" class="input-custom" required>
+                     <input type="text" placeholder="First Name" id="firstName" class="input-custom">
+                     <input type="text" placeholder="Last Name" id="lastName" class="input-custom">
+                     
+                     <input list="budget" name="budget" placeholder="Budget" required>
+                     <datalist id="budget">
                         <option value="1k">1k</option>
-                        <option value="2k" selected>2k</option>
+                        <option value="2k">2k</option>
                         <option value="3k">3k</option>
                         <option value="4k">4k</option>
-                     </select>
-                     <select name="country" id="country" value="country" class="input-custom">
-                        <option value="country">Country</option>
-                        <option value="USA">USA</option>
-                        <option value="EU" selected>Europe</option>
-                        <option value="Germany">Germany</option>
+                     </datalist>
+                     <input list="country" name="country" placeholder="Country" required>
+                     <datalist id="country">
+                        <option value="usa">USA</option>
+                        <option value="Europe">Europe</option>
                         <option value="Mexico">Mexico</option>
-                     </select>
+                        <option value="Canada">Canada</option>
+                     </datalist>
                   </div>
+                     <textarea name="comment" id="comment" cols="50" rows="8" placeholder="Tell us more about your project, needs, and timelines please..."></textarea>
+                     <input type="checkbox" id="opt-in" required> <label for="opt-in">Yes, I'd like to receive occasional marketing emails from front. I have the right to opt out at anytime.</label>
+                     <a href="#">View privacy policy</a>
+                     <a href="#"> View privacy policy</a>
+                     <div class="btn blue-btn">
+                        <a href="#">Get Started</a>
+                     </div>
                </form>
             </div>
          </div>
