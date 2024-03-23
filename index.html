@@ -349,35 +349,44 @@
             </div>
             <div class="form">
                <form action="" target="_blank" method="post">
-                  <h3>Fill out the form and we'll be in touch as soon as possible</h3>
-                  <div class="form-top">
-                     <input type="text" placeholder="First Name" id="firstName" class="input-custom" required>
-                     <input type="text" placeholder="Last Name" id="last" class="input-custom" required>
-                     <input type="text" placeholder="First Name" id="firstName" class="input-custom">
-                     <input type="text" placeholder="Last Name" id="lastName" class="input-custom">
+                  <div class="form-container">
+                     <h3>Fill out the form and we'll be in touch as soon as possible</h3>
+                     <div class="form-top">
+                        <input type="text" placeholder="First Name" id="firstName" class="input-custom" required>
+                        <input type="text" placeholder="Last Name" id="last" class="input-custom" required>
+                        <input type="text" placeholder="First Name" id="firstName" class="input-custom">
+                        <input type="text" placeholder="Last Name" id="lastName" class="input-custom">
                      
-                     <input list="budget" name="budget" placeholder="Budget" required>
-                     <datalist id="budget">
-                        <option value="1k">1k</option>
-                        <option value="2k">2k</option>
-                        <option value="3k">3k</option>
-                        <option value="4k">4k</option>
-                     </datalist>
-                     <input list="country" name="country" placeholder="Country" required>
-                     <datalist id="country">
-                        <option value="usa">USA</option>
-                        <option value="Europe">Europe</option>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Canada">Canada</option>
-                     </datalist>
-                  </div>
-                     <textarea name="comment" id="comment" cols="50" rows="8" placeholder="Tell us more about your project, needs, and timelines please..."></textarea>
-                     <input type="checkbox" id="opt-in" required> <label for="opt-in">Yes, I'd like to receive occasional marketing emails from front. I have the right to opt out at anytime.</label>
-                     <a href="#">View privacy policy</a>
-                     <a href="#"> View privacy policy</a>
-                     <div class="btn blue-btn">
-                        <a href="#">Get Started</a>
+                        <input list="budget" name="budget" placeholder="Budget" required class="input-custom input-custom-2" >
+                        <datalist id="budget">
+                           <option value="1k">1k</option>
+                           <option value="2k">2k</option>
+                           <option value="3k">3k</option>
+                           <option value="4k">4k</option>
+                        </datalist>
+                        <input list="country" name="country" placeholder="Country" required class="input-custom input-custom-2" >
+                        <datalist id="country">
+                           <option value="usa">USA</option>
+                           <option value="Europe">Europe</option>
+                           <option value="Mexico">Mexico</option>
+                           <option value="Canada">Canada</option>
+                        </datalist>
                      </div>
+                     <div class="textbox-wrapper">
+                        <textarea  class="input-custom" name="comment" id="comment" cols="46" rows="8" placeholder="Tell us more about your project, needs, and timelines please..."></textarea>
+                     </div>
+                     <div class="opt-in-container">
+                        <input type="checkbox" id="opt-in" required class="tos" class="checkbox"> 
+                        <label class="tos" for="opt-in">Yes, I'd like to receive occasional marketing emails from front. I have the right to opt out at anytime.</label>
+                     </div>
+                     <div class="privacy-policy">
+                        <a href="#">View privacy policy</a>
+                        <a href="#"> View privacy policy</a>
+                     </div>
+                     <div class="btn blue-btn">
+                        <a href="#">Get Started</a>                     
+                     </div>
+                  </div>
                </form>
             </div>
          </div>

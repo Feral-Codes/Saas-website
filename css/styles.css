@@ -480,9 +480,17 @@ form {
    background-color: var(--white);
    border: 1px solid transparent;
    border-radius: 10px;
-   margin: var(--size-30);
+   margin: var(--size-30) 0;
    max-width: 400px;
 }
+
+.form-container {
+   padding: var(--size-16);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+} 
 
 .form h3 {
    color: black;
@@ -501,4 +509,58 @@ form {
    border: 1.5px solid var(--font-color-light);
    border-radius: 5px;
 }
+
+.textbox-wrapper textarea {
+   border: 1.5px solid var(--font-color-light);
+   border-radius: 10px;
+   resize: none;
+   margin: var(--size-16) 0;
+   outline: none;
+}
+
+.opt-in-container {
+   display: flex;
+   gap: 5px;
+   align-items: center;
+}
+
+.opt-in-container input {
+   width: 40px;
+   height: 40px;
+   border: 1px solid var(--font-color-light);
+}
+
+.tos {
+   line-height: 1.3;
+}
+
+.textbox-wrapper textarea::placeholder {
+   padding: 5px;
+}
+
+.input-custom::placeholder {
+   color: var(--font-color-base);
+   font-weight: 600;
+}
+
+.input-custom-2::placeholder {
+   color: var(--font-color-dark);
+}
+
+.privacy-policy a {
+   margin: 20px;
+   color: #3b444b;
+   border-bottom: 1px dashed #3b444b;
+}
+
+.privacy-policy a:hover {
+   color: var(--font-color-blue);
+   border-bottom: 1px dashed var(--font-color-blue);
+}
+
+form .btn {
+   margin: 10px 0;
+}
+
+
 
