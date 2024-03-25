@@ -431,7 +431,10 @@ section { margin: var(--size-100) 0; }
 .benefits-card p { font-size: 0.75rem;}
 
 /* Hire us */
-.hire-us { background-color: rgb(0,46,99) }
+.hire-us { 
+   background-color: rgb(0,46,99); 
+   margin-bottom: 0;
+}
 
 .testimonial {
    max-width: 500px;
@@ -562,5 +565,79 @@ form .btn {
    margin: 10px 0;
 }
 
+/* footer */
+footer .front-info img {
+   width: 150px;
+   height: 150px;
+   margin: 0;
+   padding: 0;
+}
 
+.flex-wrap {
+   display: flex;
+   align-items: flex-start;
+   gap: var(--size-20);
+}
+
+.contrast-container .links {
+   width: 100%;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-evenly;
+   gap: var(--size-30);
+   padding-top: var(--size-30);
+}
+
+
+.front-info {
+   display: flex;
+   flex-direction: column;
+   min-width: 220px;
+}
+
+address { margin-top: -40px; }
+
+address p {
+   font-size: .75rem;
+}
+
+.address, 
+.phone { display: flex; }
+
+address .address p:hover,
+address .phone p:hover {
+    color: var(--font-color-blue); 
+   }
+
+address span,
+.resources span { padding: 0 8px; }
+
+address .fa-solid {
+   font-size: var(--size-14);
+}
+
+
+footer h4 {
+   font-size: var(--size-20);
+   font-weight: 800;
+   margin-bottom: var(--size-10);
+   color: var(--font-color-dark);
+}
+
+footer ul li a {
+   color : var(--font-color-base);
+   line-height: 2;
+}
+
+footer ul li a:hover { color: var(--font-color-blue); }
+
+.company span {
+   font-size: var(--size-10);
+   color: var(--white);
+   background-color: var(--font-color-blue);
+   border: 1px solid var(--font-color-blue);
+   border-radius: 3px;
+}
+
+footer hr { margin: var(--size-40) 0;}
 
