@@ -641,3 +641,49 @@ footer ul li a:hover { color: var(--font-color-blue); }
 
 footer hr { margin: var(--size-40) 0;}
 
+/* bottom footer */
+.bottom-uls {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.tres-ul ul {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+.social-icons {
+   display: flex;
+   gap: 10px;
+}
+
+.social-icons li a {
+   font-size: var(--size-20);
+}
+
+.social-icons li a:hover {
+   color: #f0f8ff
+}
+
+.social-icons li {
+   background-color: #f0f8ff;
+   width: 35px;
+   height: 35px;
+   text-align: center;
+   border-radius: 5px;
+}
+
+.social-icons li:hover {
+   background-color: gray;
+   color: #f0f8ff;
+}
+
+footer .block-text {
+   margin-top: var(--size-40);
+}
+
+footer .block-text p{
+   padding: 0;
+}
