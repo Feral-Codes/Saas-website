@@ -1,5 +1,5 @@
  header .container {
-   padding: var(--size-20);
+   padding: var(--size-20) var(--size-50);
    background-image: url(/assets/backgrounds/background-top.svg);
 }
 
@@ -11,6 +11,7 @@ nav {
    width: 200px;
    height: 100px;
    margin-right: auto;
+   margin-top: -10px;
 }
 
 .nav-container {
@@ -19,7 +20,8 @@ nav {
    align-items: center;
    padding-bottom: 5rem;
    padding-top: 1rem;
-   padding-right: var(--size-50)
+   padding-right: var(--size-16);
+   margin-top: -10px;
 }
 
 .nav-container ul {
@@ -653,6 +655,9 @@ footer hr { margin: var(--size-40) 0;}
    align-items: center;
    gap: 5px;
 }
+
+footer .tres-ul a,
+footer .block-text p { font-size: var(--size-10); }
 
 .social-icons {
    display: flex;
