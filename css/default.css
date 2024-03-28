@@ -46,8 +46,11 @@ ul {
   list-style: none;
 }
  
-a { text-decoration: none; }
- 
+a { 
+  text-decoration: none;
+  color: var(--font-color-blue);
+}
+
 p { 
   margin-top: 0;
   padding-top: 0;
@@ -102,6 +105,21 @@ h2 {
   color: var(--white);
   padding: 0.55rem var(--size-16);
 }
+
+.sketch {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--white);
+  background-color: #66ddaa;
+  padding: 0.3rem 0.35rem;
+  border-radius: 13px;
+  visibility: hidden;
+}
+
+.key-card-container .sketch:target-within{
+  visibility: visible;
+}
+ 
  
  /* media sizes for containers */
 @media (min-width: 768px) {

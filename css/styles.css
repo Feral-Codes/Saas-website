@@ -91,22 +91,14 @@ nav {
    display: flex;
    justify-content: center;
    align-items: center;
-   animation: slideInTop 2s ease-in 1s 1 normal forward;
+   /* animation: slideInTop 2s ease-in 1s 1 normal forward; */
 }
 
-@keyframes slideInTop {
-   from {
-      transform: translateY(-1000px);
-   }
-   to {
-      transform: translateY(0);
-   }
-}
 
 .logo-icons {
    width: var(--size-50);
    height: var(--size-50);
-   animation: slideInTop 2s ease-in 1s 1 normal forward;
+   /* animation: slideInTop 3s ease-in 3s 1 normal forward; */
 }
 
 .icons-resize {
@@ -123,6 +115,7 @@ nav {
    position: absolute;
    top: -2rem;
    left: 1rem;
+   animation: slideInTop 3s ease-in 3s 1 normal forward;
 }
 
 .logo-2 {
@@ -159,8 +152,17 @@ nav {
    position: absolute;
    bottom: -4.375rem;
    right: var(--size-100);
+   animation: slideInTop 3s ease-in 3s 1 normal forward;
 }
 
+@keyframes slideInTop {
+   from {
+      transform: translateY(-200px);
+   }
+   to {
+      transform: translateY(0);
+   }
+}
 /* key benefits amd cards */
 section { margin: var(--size-100) 0; }
 .block-text {
@@ -199,6 +201,11 @@ section { margin: var(--size-100) 0; }
 
 .key-card-container h3 {
    color: var(--font-color-dark)
+}
+
+.key-card-container:hover {
+   transform: translate(-10px, -10px);
+   box-shadow: 0px 10px 15px var(--font-color-blue);
 }
 
 /* front banner */
@@ -283,8 +290,8 @@ section { margin: var(--size-100) 0; }
 }
 
 .play-button {
-   width: 60px;
-   height: 60px;
+   width: 55px;
+   height: 55px;
    border-radius: 50%;
    background-color: var(--white);
    position: absolute;
@@ -297,7 +304,10 @@ section { margin: var(--size-100) 0; }
    box-shadow: 0px 0px 10px rgba(106, 106, 106 , 1 );
 }
 
-.fa-solid { font-size: var(--size-20); }
+.play-button .fa-solid { 
+   font-size: var(--size-20); 
+   color: black;
+}
 
 /* hub-spot */
 
