@@ -12,7 +12,7 @@
    <body>
       <header>
          <div class="container">
-            <nav>
+            <nav id="topNav" class="navbar">
                <div class="website-logo-container">
                   <img class="website-logo" src="/assets/project_logo/logo.svg" alt="website logo">
                </div>
@@ -485,7 +485,18 @@
          </div>
 
       </footer>
-
-      <script src="https://kit.fontawesome.com/d8c86b0491.js" crossorigin="anonymous"></script>
    </body>
 </html>
+
+      <script src="https://kit.fontawesome.com/d8c86b0491.js" crossorigin="anonymous"></script>
+      <script>
+         const nav=document.getElementById("topNav");
+         window.onscroll = function (){
+           if (window.pageYOffset > 100) {
+             nav.classList.add ("sticky");
+           } else {
+             nav.classList.remove("sticky");
+           }
+         }
+      </script>
+
