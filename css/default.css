@@ -113,13 +113,12 @@ h2 {
   background-color: #66ddaa;
   padding: 0.3rem 0.35rem;
   border-radius: 13px;
-  visibility: hidden;
+  opacity: 0;
 }
 
-.key-card-container .sketch:target-within{
-  visibility: visible;
+.key-card-container:hover .sketch {
+  opacity: 1;
 }
- 
  
  /* media sizes for containers */
 @media (min-width: 768px) {
