@@ -201,7 +201,8 @@ section { margin: var(--size-100) 0; }
    box-shadow: 0px 10px 15px rgba(	0, 112, 255, 0.55);
 }
 
-.key-card-container-two:hover {
+.key-card-container-two:hover,
+.price-card:hover  {
    transform: translate(10px, -10px);
    transition: transform 0.5s;
    box-shadow: 0px 10px 15px rgba(	0, 112, 255, 0.55);
@@ -223,14 +224,14 @@ section { margin: var(--size-100) 0; }
    float: left;
 }
 
-.banner-one-container > img {
+.fade-in {
    scale: .8; opacity: 0;
-   animation: fade-in linear both;
+   animation: fadeIn linear both;
    animation-timeline: view();
    animation-range: 0px 430px;
 }
 
-@keyframes fade-in {
+@keyframes fadeIn {
    to {scale: 1; opacity: 1;}
 }
 
@@ -483,6 +484,8 @@ section { margin: var(--size-100) 0; }
 }
 
 .benefits-img {
+   display: flex;
+   align-items: center;
    width: 50px;
    height: 50px;
 }
@@ -535,6 +538,11 @@ section { margin: var(--size-100) 0; }
    width: 50px;
    height: 50px;
    border-radius: 50%;
+}
+
+.testimonial-img:hover {
+   transform: scale(1.25);
+   box-shadow: 0 0 10px var(--font-color-link);
 }
 
 .hire-us .contrast-container {

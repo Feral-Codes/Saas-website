@@ -116,7 +116,8 @@ h2 {
   opacity: 0;
 }
 
-.key-card-container:hover .sketch {
+.key-card-container:hover .sketch,
+.benefits-card:hover .sketch {
   opacity: 1;
 }
  
