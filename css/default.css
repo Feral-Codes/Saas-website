@@ -98,6 +98,11 @@ h2 {
   transition: eas-in-out 0.3sec;
 }
 
+.btn:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 20px #666;
+}
+
 .blue-btn {
   background-color: var(--font-color-blue);
   border: 1px solid var(--font-color-blue);

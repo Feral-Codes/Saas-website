@@ -52,6 +52,7 @@ nav {
 .nav-container li a:hover { color: var(--font-color-blue); }
 
 .blue-btn a { color: var(--white) }
+.nav-container .btn { margin-right: var(--size-10);}
 
 .hero-wrapper h2 {
    color: var(--font-color-dark);
