@@ -54,7 +54,10 @@ nav {
 .nav-item a:hover { color: var(--font-color-blue); }
 
 .blue-btn a { color: var(--white) }
-.nav-container .btn { margin-right: var(--size-10);}
+.nav-container .btn { 
+   margin-right: var(--size-10);
+   margin-top: -5px;
+}
 
 .hamburger {
    display: none;

@@ -24,11 +24,10 @@
                         <li class="nav-item"><a href="#learn">Learn</a></li>
                         <li class="nav-item"><a href="#pricingSection">Pricing</a></li>
                         <li class="nav-item"><a href="#hireUs">Hire us</a></li>
-                        <!-- <li><div class="btn blue-btn">
-                              <a href="#">Buy Now</a>
-                           </div>
-                        </li> -->
                      </ul>
+                     <div class="btn blue-btn nav-btn">
+                        <a href="#">Buy Now</a>
+                     </div>
                   </div>
                   <div class="hamburger">
                      <span class="bar"></span>
@@ -521,16 +520,19 @@
 
          const hamburger = document.querySelector(".hamburger");
          const navMenu = document.querySelector(".nav-menu");
+         const navContainer = document.querySelector(".nav-container");
 
          hamburger.addEventListener("click", () => {
             hamburger.classList.toggle("active");
             navMenu.classList.toggle("active");
+            navContainer.classList.toggle("active");
          })
 
          document.querySelectorAll (".nav-link").forEach(n => n.
          addEventListener("click", () => {
             hamburger.classList.remove("active")
             navMenu.classList.remove("active")
+            navContainer.classList.remove("active")
          }))
       </script>
 

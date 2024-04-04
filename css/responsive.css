@@ -1,8 +1,49 @@
-@media screen and (max-width: 480px){
+@media (max-width: 1024px) {
+   .hamburger { display: block; }
 
-}
+   .hamburger.active .bar:nth-child(2) { opacity: 0; }
 
-@media screen and (max-width: 768px){
+   .hamburger.active .bar:nth-child(1) { 
+      transform: translateY(8px) rotate(45deg);
+   }
 
+   .hamburger.active .bar:nth-child(3) { 
+      transform: translateY(-8px) rotate(-45deg);
+   }
+
+  .navbar.sticky {
+      width: 98vh;
+      padding: 5px;
+  }
+
+  .nav-menu {
+      position: fixed;
+      left: 100%;
+      top: 90px;
+      text-align: center;
+      transition: 0.3s;
+      background-color: white;
+      max-width: 100%;
+      z-index: 90;
+  }
+
+  .nav-container.active {}
+
+  .nav-container.active ul {
+      display: flex ;
+      justify-content: space-around;
+  }
+
+  .nav-menu.active {
+      left: 4.375rem;
+      width: 98vh;
+      height: 50vh;
+      padding: var(--size-30) var(--size-100);
+      margin: 0 auto;
+   }
+
+   .nav-menu.active a {
+      font-size: var(--size-18);
+   }
 }
    
