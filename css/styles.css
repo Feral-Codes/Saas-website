@@ -1,7 +1,8 @@
  header .container {
    padding: var(--size-20) var(--size-50);
    background-image: url(/assets/backgrounds/background-top.svg);
-}
+   object-fit: contain;
+ }
 
 nav {
    display: flex;
@@ -44,15 +45,31 @@ nav {
    gap: var(--size-20);
 }
 
-.nav-container li a {
+.nav-item a {
    font-size: var(--size-16);
    color: var(--font-color-base);
+   transition: 0.3s ease-in-out;
 }
 
-.nav-container li a:hover { color: var(--font-color-blue); }
+.nav-item a:hover { color: var(--font-color-blue); }
 
 .blue-btn a { color: var(--white) }
 .nav-container .btn { margin-right: var(--size-10);}
+
+.hamburger {
+   display: none;
+   cursor: pointer;
+}
+
+.bar {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px auto; 
+   transition: all 0.3s ease-in-out;
+   background-color: black;
+   color: black;
+}
 
 .hero-wrapper h2 {
    color: var(--font-color-dark);
