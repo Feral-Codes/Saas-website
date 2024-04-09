@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
    .hamburger { display: block; }
 
    .hamburger.active .bar:nth-child(2) { opacity: 0; }
@@ -13,7 +13,8 @@
 
   .navbar.sticky {
       width: 98vh;
-      padding: 5px;
+      padding: var(--size-20) var(--size-10) 0 var(--size-10);
+      top: 35px;
   }
 
   .nav-menu {
@@ -36,14 +37,22 @@
 
   .nav-menu.active {
       left: 4.375rem;
-      width: 98vh;
+      top: 83px;
+      min-width: 45rem;
       height: 50vh;
       padding: var(--size-30) var(--size-100);
-      margin: 0 auto;
+      border-top: 1px solid var(--font-color-light);
+      box-shadow: 10px 10px 20px var(--font-color-light);
    }
 
    .nav-menu.active a {
       font-size: var(--size-18);
+   }
+
+   .nav-btn {
+      position: fixed;
+      left: 100%;
+      top: 90px;
    }
 }
    

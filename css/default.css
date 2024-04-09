@@ -133,9 +133,7 @@ h2 {
 }
  
 @media (min-width: 1200px) {
-  .contrast-container {
-    max-width: 1140px;
-    margin: auto; 
-  }
+
 }
+
 

@@ -437,7 +437,7 @@ section { margin: var(--size-100) 0; }
 .company-wrapper {
    width: 150px;
    height: 150px;
-}
+} */
 
 /* pricing */
 .pricing .block-text {
@@ -732,7 +732,7 @@ footer ul li a:hover { color: var(--font-color-blue); }
    border-radius: 3px;
 }
 
-footer hr { margin: var(--size-40) 0;}
+footer hr { margin: var(--size-40) 0;} 
 
 /* bottom footer */
 .bottom-uls {
