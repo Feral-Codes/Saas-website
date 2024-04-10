@@ -1,13 +1,18 @@
- header .container {
-   padding: var(--size-20) var(--size-50);
+header {
    background-image: url(/assets/backgrounds/background-top.svg);
-   object-fit: contain;
- }
+}
+
+.website-logo-container {
+   width: 250px;
+   height: 100px;
+   margin-top: -10px;
+}
 
 nav {
    display: flex;
-   z-index: 500;
+   justify-content: space-between;
    transition: eas-in-out 0.3sec;
+   padding-top: var(--size-30);
 }
 
 .navbar.sticky {
@@ -24,13 +29,6 @@ nav {
    margin-top: 5px;
 }
 
-.website-logo-container {
-   width: 200px;
-   height: 100px;
-   margin-right: auto;
-   margin-top: -10px;
-}
-
 .nav-container {
    display: flex;
    gap: var(--size-50);
@@ -42,16 +40,16 @@ nav {
 
 .nav-container ul {
    display: flex;
-   gap: var(--size-20);
+   gap: var(--size-40);
 }
 
 .nav-item a {
-   font-size: var(--size-16);
+   font-size: 1.5rem;
    color: var(--font-color-base);
-   transition: 0.3s ease-in-out;
+   transition: 0.1s ease-in-out;
 }
 
-.nav-item a:hover { color: var(--font-color-blue); }
+a.anchor-hover:hover { color: var(--font-color-blue); }
 
 .blue-btn a { color: var(--white) }
 .nav-container .btn { 
@@ -74,31 +72,26 @@ nav {
    color: black;
 }
 
-.hero-wrapper h2 {
-   color: var(--font-color-dark);
-   margin: 0 0 var(--size-10) 0;
-   font-weight: 600;
-   font-size: var(--size-40);
-}
-
-.hero-wrapper p { 
-   margin-bottom: var(--size-20); 
-   font-weight: 500;
-}
-.header-buttons .btn { margin-right: var(--size-20); }
-
-.header-buttons > a { color: var(--font-color-blue); }
-
 /* bottom of header */
 .bottom-header {
+   border: 1px solid black;
+   height: 400px;
    display: flex;
    padding-bottom: var(--size-30);
 }
 
+.hero-wrapper h2 {
+   color: var(--font-color-dark);
+   font-size: var(--size-50);
+}
+
+.hero-wrapper p { margin-bottom: var(--size-20); }
+
 .header-text { margin-right: auto; }
 
 .company-icons-container{
-   width: 31.25rem;
+   width: 500px;
+   border: 1px solid blue;
    position: relative;
 }
 
@@ -721,8 +714,6 @@ footer ul li a {
    color : var(--font-color-base);
    line-height: 2;
 }
-
-footer ul li a:hover { color: var(--font-color-blue); }
 
 .company span {
    font-size: var(--size-10);

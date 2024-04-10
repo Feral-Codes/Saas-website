@@ -49,11 +49,11 @@ ul {
 a { 
   text-decoration: none;
   color: var(--font-color-blue);
+  font-size: 1rem;
 }
 
 p { 
   margin-top: 0;
-  padding-top: 0;
   color: var(--font-color-base)
 }
  
@@ -72,18 +72,12 @@ h2 {
   border-style: none;
 }
  
-.container {
+.contrast-container {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 var(--size-30);
+  margin: 0 auto
 }
  
-.contrast-container {
-  margin: var(--size-20);
-}
-
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -93,8 +87,8 @@ h2 {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 1.375rem 1rem;
-  border-radius: 1.25rem;
+  padding: 0.625rem 1rem;
+  border-radius: 1.5625rem;
   transition: ease-in-out 0.3s;
 }
 
@@ -107,7 +101,6 @@ h2 {
   background-color: var(--font-color-blue);
   border: 1px solid var(--font-color-blue);
   color: var(--white);
-  padding: 0.55rem var(--size-16);
 }
 
 .sketch {
@@ -132,8 +125,12 @@ h2 {
    
 }
  
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
+  .contrast-container { padding: 0 var(--size-50); }
+}
 
+@media (min-width: 1500px) {
+  .contrast-container { padding: 0 var(--size-100); }
 }
 
 
