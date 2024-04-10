@@ -3,7 +3,7 @@ header {
 }
 
 .website-logo-container {
-   width: 250px;
+   width: 200px;
    height: 100px;
    margin-top: -10px;
 }
@@ -23,6 +23,7 @@ nav {
    box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
    width: 90%;
    height: 70px;
+   z-index: 10;
 }
 
 .navbar.sticky .nav-container {
@@ -44,7 +45,7 @@ nav {
 }
 
 .nav-item a {
-   font-size: 1.5rem;
+   font-size: 1.25rem;
    color: var(--font-color-base);
    transition: 0.1s ease-in-out;
 }
@@ -74,30 +75,24 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 
 /* bottom of header */
 .bottom-header {
-   border: 1px solid black;
    height: 400px;
    display: flex;
+   justify-content: space-between;
    padding-bottom: var(--size-30);
-}
-
-.hero-wrapper h2 {
-   color: var(--font-color-dark);
-   font-size: var(--size-50);
 }
 
 .hero-wrapper p { margin-bottom: var(--size-20); }
 
-.header-text { margin-right: auto; }
+.header-buttons .blue-link { margin-left: var(--size-20); }
 
 .company-icons-container{
-   width: 500px;
-   border: 1px solid blue;
+   min-width: 40rem;
    position: relative;
 }
 
 .logo-circle {
-   width: 4.5rem;
-   height: 4.5rem;
+   width: 5rem;
+   height: 5rem;
    border-radius: 50%;
    background-color: var(--white);
    box-shadow: 0px 0px 10px grey;
@@ -114,43 +109,43 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 }
 
 .icons-resize {
-   width: var(--size-30);
-   height: var(--size-30);
+   width: var(--size-40);
+   height: var(--size-40);
 }
 
 .logo-resize {
-   width: var(--size-50);
-   height: var(--size-50);
+   width: 3.75rem;
+   height: 3.75rem;
 }
 
 .logo-1 {
    position: absolute;
-   top: -2rem;
-   left: 1rem;
+   top: 1rem;
+   right: 36rem;
 }
 
 .logo-2 {
    position: absolute;
-   top: -2rem;
-   left: 8.625rem;
+   top: 2rem;
+   right: 28rem;
 }
 
 .logo-3 {
    position: absolute;
    top: -2rem;
-   right: var(--size-50);
+   right: 6rem;
 }
 
 .logo-4 {
    position: absolute;
-   top: 7.375rem;
-   left: -1rem;
+   bottom: 5.25rem;
+   left: -0.5rem;
 }
 
 .logo-5 {
    position: absolute;
-   top: 7.375rem;
-   left: 12.5rem;
+   bottom: 5.25rem;
+   right: 18.5rem;
 }
 
 .logo-6 {
@@ -161,8 +156,8 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 
 .logo-7 {
    position: absolute;
-   bottom: -4.375rem;
-   right: var(--size-100);
+   bottom: -3.5rem;
+   right: 10rem;
 }
 
 @keyframes slideInTop {
@@ -179,7 +174,8 @@ section { margin: var(--size-100) 0; }
 .block-text { text-align: center; }
 
 .block-text h2 {
-   font-weight: 600;
+   font-size: 2.5rem;
+   /* font-weight: 600; */
    padding-top: var(--size-100);
    margin: 0;
 }
@@ -222,6 +218,9 @@ section { margin: var(--size-100) 0; }
 }
 
 /* front banner */
+.banner-container {
+   padding: 0 var(--size-20);
+}
 .front-banner .contrast-container {
    background-color: var(--font-color-contrast);
    display: flex;
