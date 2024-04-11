@@ -26,7 +26,7 @@ html {scroll-behavior: smooth;}
 body {
   font-family:sans-serif;
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1em;
   line-height: 1.6;
   letter-spacing: 0;
   color: var(--font-color-base);
@@ -114,6 +114,22 @@ h2 {
   opacity: 0;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto; 
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  color: black;
+}
+
+
 .key-card-container:hover .sketch,
 .benefits-card:hover .sketch {
   opacity: 1;
@@ -122,16 +138,3 @@ h2 {
  /* media sizes for containers */
 
  
-@media (min-width: 992px) {
-   
-}
- 
-@media (min-width: 1250px) {
-  .contrast-container { padding: 0 var(--size-50); }
-}
-
-@media (min-width: 1500px) {
-  .contrast-container { padding: 0 var(--size-100); }
-}
-
-
