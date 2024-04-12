@@ -1,9 +1,10 @@
 header {
    background-image: url(/assets/backgrounds/background-top.svg);
+   padding-bottom: 2rem;
 }
 
 .navbar {
-   padding: 1rem 0;
+   padding: 1em 0;
    width: 100%;
    display: flex;
    justify-content: space-between;
@@ -17,10 +18,145 @@ header {
 .nav-container {
    display: flex;
    align-items: center;
-   gap: .75rem;
+   gap: 2.5rem;
 }
 
 .nav-menu {
    display: flex;
    gap: 1.25rem;
 }
+
+.nav-item a {
+   font-size: 1.25rem;
+}
+
+a.anchor-hover:hover { color: var(--font-color-blue); }
+
+.hamburger {
+   display: none;
+   cursor: pointer;
+}
+ 
+.bar {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px auto; 
+   transition: all 0.3s ease-in-out;
+   background-color: black;
+   color: black;
+}
+
+/* bottom header */
+.bottom-header {
+   display: flex;
+   justify-content: space-between;
+   margin: 1.5rem 0;
+}
+
+.hero-wrapper { padding-top: 1.25em; }
+
+.hero-wrapper h2 {
+   font-size: 3rem;
+   font-weight: 500;
+   margin-bottom: 0.225rem;
+}
+
+.header-buttons {
+   margin-top: 1rem;
+}
+
+.header-buttons .btn {
+   margin-right: 1rem;
+}
+
+.blue-link { 
+   color: var(--font-color-blue);
+   font-weight: 600;
+}
+
+/* company-logos  */
+
+.company-icons-container {
+   position: relative;
+}
+
+.logo-circle {
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+   background-color: var(--white);
+   box-shadow: 0px 0px 10px grey;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   animation: slideInTop 1s ease 0s;
+}
+
+
+.logo-icons {
+   width: var(--size-50);
+   height: var(--size-50);
+}
+
+.icons-resize {
+   width: var(--size-40);
+   height: var(--size-40);
+}
+
+.logo-resize {
+   width: 3.75rem;
+   height: 3.75rem;
+}
+
+.logo-1 {
+   position: absolute;
+   top: 12rem;
+   right: 36rem; 
+}
+
+.logo-2 {
+   position: absolute;
+   top: 2rem;
+   right: 28rem;
+}
+
+.logo-3 {
+   position: absolute;
+   top: -2rem;
+   right: 6rem;
+}
+
+.logo-4 {
+   position: absolute;
+   bottom: 5.25rem;
+   left: -0.5rem;
+}
+
+.logo-5 {
+   position: absolute;
+   bottom: 5.25rem;
+   right: 18.5rem;
+}
+
+.logo-6 {
+   position: absolute;
+   bottom: -2rem;
+   left: var(--size-100);
+}
+
+.logo-7 {
+   position: absolute;
+   bottom: -3.5rem;
+   right: 10rem;
+}
+
+@keyframes slideInTop {
+   from {
+      transform: translateY(50px);
+   }
+   to {
+      transform: translateY(0);
+   }
+}
+ 

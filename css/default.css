@@ -51,8 +51,9 @@ ul {
  
 a { 
   text-decoration: none;
-  color: var(--font-color-light);
+  color: var(--font-color-base);
   font-size: 1rem;
+  transition: ease 275ms;
 }
 
 p { 
@@ -65,7 +66,7 @@ h2 {
   font-size: var(--size-30);
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: var(--size-10);
+  margin: 0;
 }
  
  img {
@@ -84,7 +85,7 @@ h2 {
   user-select: none;
   background-color: var(--font-color-blue);
   border: 1px solid var(--font-color-blue);
-  padding: 0.625rem 1rem;
+  padding: 0.625rem 1.225rem;
   border-radius: 1.5625rem;
   transition: ease-in-out 0.3s;
 }
@@ -95,7 +96,8 @@ h2 {
 }
 
 .btn > a {
-  color: var(--white)
+  color: var(--white);
+  font-size: 0.85rem;
 }
 
 .sketch {
@@ -108,26 +110,12 @@ h2 {
   opacity: 0;
 }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto; 
-  transition: all 0.3s ease-in-out;
-  background-color: black;
-  color: black;
-}
-
-
 .key-card-container:hover .sketch,
 .benefits-card:hover .sketch {
   opacity: 1;
 }
+
+a.anchor-hover:hover { color: var(--font-color-blue); }
  
  /* media sizes for containers */
 
@@ -140,6 +128,6 @@ h2 {
 
 @media (min-width: 1800px) {
   .container {
-    padding: 0 12rem;
+    padding: 0 20rem;
   }
 }
