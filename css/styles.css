@@ -12,7 +12,7 @@ header {
 }
 
 .website-logo-container {
-   width: 15%;
+   width: 18%;
 }
 
 .nav-container {
@@ -27,7 +27,7 @@ header {
 }
 
 .nav-item a {
-   font-size: 1.25rem;
+   font-size: 1.125rem;
 }
 
 a.anchor-hover:hover { color: var(--font-color-blue); }
@@ -54,12 +54,11 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
    margin: 1.5rem 0;
 }
 
-.hero-wrapper { padding-top: 1.25em; }
+.hero-wrapper { padding-top: 2em; }
 
 .hero-wrapper h2 {
    font-size: 3rem;
-   font-weight: 500;
-   margin-bottom: 0.225rem;
+   font-weight: 600;
 }
 
 .header-buttons {
@@ -111,44 +110,44 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 
 .logo-1 {
    position: absolute;
-   top: 12rem;
-   right: 36rem; 
+   top: 1rem;
+   right: 25rem; 
 }
 
 .logo-2 {
    position: absolute;
    top: 2rem;
-   right: 28rem;
+   right: 17rem;
 }
 
 .logo-3 {
    position: absolute;
-   top: -2rem;
-   right: 6rem;
+   top: 1rem;
+   right: 2rem;
 }
 
 .logo-4 {
    position: absolute;
-   bottom: 5.25rem;
-   left: -0.5rem;
+   bottom: 5rem;
+   right: 27rem;
 }
 
 .logo-5 {
    position: absolute;
-   bottom: 5.25rem;
-   right: 18.5rem;
+   bottom: 5rem;
+   right: 11rem;
 }
 
 .logo-6 {
    position: absolute;
    bottom: -2rem;
-   left: var(--size-100);
+   right: 22rem;
 }
 
 .logo-7 {
    position: absolute;
-   bottom: -3.5rem;
-   right: 10rem;
+   bottom: -5rem;
+   right: 5rem;
 }
 
 @keyframes slideInTop {
@@ -159,4 +158,47 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
       transform: translateY(0);
    }
 }
+
+/* key benefits */
+section.key-benefits { padding: 10em 0; }
+
+.key-benefits .block-text {
+   text-align: center;
+}
+
+.card-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+   margin-top: 5rem ;
+}
+
+.key-card-container {
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+   width: 18%;
+   box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.5);
+}
+
+.key-image { width: 20%; }
+
+.key-card-container h3 { color: black; }
+
+.key-card-container p {
+   margin-bottom: 1.225rem;
+}
  
+.key-card-container:hover {
+   transform: translate(-10px, -10px);
+   transition: transform 0.5s;
+   box-shadow: 0px 10px 15px rgba(	0, 112, 255, 0.55);
+}
+
+.key-card-container-two:hover,
+.price-card:hover  {
+   transform: translate(10px, -10px);
+   transition: transform 0.5s;
+   box-shadow: 0px 10px 15px rgba(	0, 112, 255, 0.55);
+}
