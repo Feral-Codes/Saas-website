@@ -1,1 +1,26 @@
-1
+header {
+   background-image: url(/assets/backgrounds/background-top.svg);
+}
+
+.navbar {
+   padding: 1rem 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.website-logo-container {
+   width: 15%;
+}
+
+.nav-container {
+   display: flex;
+   align-items: center;
+   gap: .75rem;
+}
+
+.nav-menu {
+   display: flex;
+   gap: 1.25rem;
+}
