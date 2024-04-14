@@ -162,7 +162,8 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 /* key benefits */
 section.key-benefits { padding: 10em 0; }
 
-.key-benefits .block-text {
+.key-benefits .block-text,
+.why-front .block-text {
    text-align: center;
 }
 
@@ -221,3 +222,56 @@ section.key-benefits { padding: 10em 0; }
    float: right;
    margin-top: auto;
 }
+
+/* dots on dots */
+.section-spacing {
+   padding: 4em;
+}
+.big-dot {
+   width: 3.125rem;
+   height: 3.125rem;
+   background-color: var(--font-color-contrast);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.lil-dot {
+   width: 0.3125rem;
+   height: 0.3125rem;
+   border-radius: 50%;
+   background-color: var(--font-color-blue);
+}
+
+.dots-on-dots {
+   display: flex;
+   justify-content: center;
+}
+
+.the-dot {
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+}
+
+
+.line {
+   width: var(--size-100);
+   height: 0.125rem;
+   background-color: var(--font-color-contrast);
+}
+
+.line-dot {
+   display: flex;
+   align-items: center;
+   gap: 0.3125rem;
+}
+
+.the-dot .p {
+   margin-top: var(--size-14);
+   color: var(--font-color-dark);
+   font-weight: 500;
+}
+
+.hidden-line { background-color: transparent; }
