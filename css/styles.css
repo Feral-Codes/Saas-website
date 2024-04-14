@@ -223,6 +223,18 @@ section.key-benefits { padding: 10em 0; }
    margin-top: auto;
 }
 
+.fade-in {
+   scale: .8; opacity: 0;
+   animation: fadeIn linear both;
+   animation-timeline: view();
+   animation-range: 0px 430px;
+}
+
+@keyframes fadeIn {
+   to {scale: 1; opacity: 1;}
+}
+
+
 /* dots on dots */
 .section-spacing {
    padding: 4em;
