@@ -163,7 +163,8 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 section.key-benefits { padding: 10em 0; }
 
 .key-benefits .block-text,
-.why-front .block-text {
+.why-front .block-text,
+.pricing .block-text {
    text-align: center;
 }
 
@@ -236,9 +237,11 @@ section.key-benefits { padding: 10em 0; }
 
 
 /* dots on dots */
-.section-spacing {
-   padding: 4em;
+.section-spacing { padding: 4em 0; }
+.dots {
+   margin: 3rem 0;
 }
+
 .big-dot {
    width: 3.125rem;
    height: 3.125rem;
@@ -287,3 +290,128 @@ section.key-benefits { padding: 10em 0; }
 }
 
 .hidden-line { background-color: transparent; }
+
+/* banner 2 play */
+
+.banner-2 {
+   position: relative;
+}
+
+.play-button,
+.pulse-effect{
+   width: 55px;
+   height: 55px;
+   border-radius: 50%;
+   background-color: var(--white);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 100;
+   display: grid;
+   place-items: center;
+   box-shadow: 0px 0px 10px rgba(106, 106, 106 , 1 );
+}
+
+.pulse-effect {
+   z-index: 10;
+   background-color: red;
+   animation: pulse 1250ms infinite;
+}
+
+@keyframes pulse {
+   0% {
+      transform: scale(0.95);
+      opacity: 0.75;
+   }
+   100% {
+      transform: scale(1.35);
+      opacity: 0;
+   }
+}
+
+.play-button .fa-solid { 
+   font-size: var(--size-20); 
+   color: black;
+   z-index: 20;
+}
+
+/* hubspot profile */
+.hub-spot .showcase {
+   display: flex;
+   justify-content: space-around;
+}
+
+.profile-container {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.img-container {
+   position: relative;
+   min-width: 31.25rem;
+   min-height: 37.5rem;
+}
+
+.abstract-dots {
+   width: 15.625rem;
+   height: 15.625rem;
+   position: absolute;
+   top: 6.25rem;
+}
+
+.woman-three {
+   width: 25rem;
+   height: 31.25rem;
+   position: absolute;
+   left: 1.875rem;
+}
+
+.right-showcase { padding-top: var(--size-50); }
+
+.hubspot-img img {
+   width: 9.375rem;
+   height: 6.25rem;
+   margin-bottom: var(--size-20);
+}
+
+.right-showcase .content-wrapper { max-width: 70%; }
+
+.right-showcase span {
+   font-size: 1.5625rem;
+   font-weight: 600;
+   color: var(--font-color-dark);
+}
+
+.right-showcase h3 {
+   margin-bottom: 0;
+   margin-top: var(--size-50);
+   color: var(--font-color-dark);
+   font-size: var(--size-20);
+   font-weight: 600;
+}
+
+.right-showcase p {
+   color: var(--font-color-base);
+   font-weight: 600;
+}
+
+/* worlds best */
+.worlds-best h2 {
+   text-align: center;
+   color: var(--font-color-base);
+}
+
+.company-titles {
+   display: flex;
+   justify-content: space-evenly;
+   gap: 4.25em;
+}
+
+.company-wrapper { max-width: 13%; }
+
+/* pricing */
+.main-wrapper {
+   display: flex;
+   justify-content: space-evenly;
+}
