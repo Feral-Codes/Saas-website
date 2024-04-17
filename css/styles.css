@@ -497,6 +497,7 @@ section.key-benefits { padding: 10em 0; }
    display: flex;
    flex-direction: column;
    padding: 5em 3em;
+   width: 100%;
 }
 
 .testimonial h3 {
@@ -544,7 +545,7 @@ section.key-benefits { padding: 10em 0; }
 form { 
    background-color: white;
    border-radius: 18px;
-   width: 60%;
+   width: 100%;
 }
 
 .form-container {
@@ -595,4 +596,8 @@ form textarea {
    color: var(--font-color-dark);
 }
 
-
+.btn-container {
+   display: grid;
+   place-items: center;
+   margin: 1rem auto;
+}
