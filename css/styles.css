@@ -601,3 +601,13 @@ form textarea {
    place-items: center;
    margin: 1rem auto;
 }
+
+/* footer */
+.flex-wrap {
+   display: flex;
+
+}
+
+.front-info img {
+   width: 12rem;
+}
