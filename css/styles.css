@@ -514,7 +514,8 @@ section.key-benefits { padding: 10em 0; }
 
 .testimonial .quote { margin: 1rem 0;}
 
-.testimonial h4 {
+.testimonial h4,
+.links h4 {
    font-size: var(--size-20);
    margin: 1rem 0 0 0;
 }
@@ -605,9 +606,67 @@ form textarea {
 /* footer */
 .flex-wrap {
    display: flex;
-
+   gap: 1rem;
 }
 
-.front-info img {
-   width: 12rem;
+.front-info img { 
+   width: 10rem; 
+   margin-bottom: 1rem;
 }
+
+.address,
+.phone {
+   display: flex;
+   gap: 1rem;
+   margin: .5rem 0;
+}
+
+.address p:hover,
+.phone p:hover { color: var(--font-color-blue) }
+
+footer .links {
+   flex: 1 2 auto;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.links li { margin: .55rem 0; }
+
+footer hr {
+   margin: 2em 0;
+}
+
+.bottom-uls {
+   display: flex;
+   justify-content: space-between;
+}
+
+.tres-ul ul,
+.icons-ul ul {
+   display: flex;
+   gap: .5rem;
+}
+
+.icons-ul ul { gap: 1.5rem; }
+
+.icon-background {
+   background-color: #DBE2E9;
+   width: 30px;
+   height: 30px;
+   border-radius: 10px;
+   display: grid;
+   place-items: center;
+}
+
+.icon-background:hover,
+.social-icons a:hover {
+   color: #DBE2E9;
+   background-color: grey;
+}
+
+footer .block-text {
+   text-align: center;
+   padding: 2em 0;
+   font-size: var(--size-14);
+}
+
