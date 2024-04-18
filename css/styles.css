@@ -11,6 +11,10 @@ header {
    align-items: center;
 }
 
+.navbar.sticky {
+   position: fixed;
+}
+
 .website-logo-container {
    width: 18%;
 }
