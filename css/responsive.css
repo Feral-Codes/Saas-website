@@ -1,5 +1,8 @@
 @media (max-width: 1023px) {
-   .hamburger { display: block; }
+   .hamburger { 
+      display: block;
+      margin-right: 1rem;
+   }
 
    .hamburger.active .bar:nth-child(2) { opacity: 0; }
 
@@ -12,7 +15,6 @@
    }
 
   .navbar.sticky {
-      width: 98vh;
       padding: var(--size-20) var(--size-10) 0 var(--size-10);
       top: 35px;
   }
@@ -121,6 +123,10 @@
       margin: 2rem;
    }
 
+   .key-card-container {
+      min-width: 45%;
+   }
+
    /* front-banner */
    .banner-wrapper {
       flex-direction: column;
@@ -140,11 +146,6 @@
    .line {
       width: var(--size-50);
    }
-
-   /* .hidden-line {
-      display: none;
-   } */
-
 
 
 

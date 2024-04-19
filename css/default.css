@@ -21,9 +21,6 @@
   --size-150: 9.375rem;
 }
  
-/* * {
-  outline: 1px solid red;
-} */
 html {scroll-behavior: smooth;}
  
 body {
@@ -127,9 +124,15 @@ h4 { color: black; }
 a.anchor-hover:hover { color: var(--font-color-blue); }
  
  /* media sizes for containers */
+@media (max-width: 1023px) {
+  .container {
+    margin: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
-    margin: 0 3rem;
+    padding: 0 3rem;
   }
 }
 
