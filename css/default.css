@@ -21,6 +21,9 @@
   --size-150: 9.375rem;
 }
  
+/* * {
+  outline: 1px solid red;
+} */
 html {scroll-behavior: smooth;}
  
 body {

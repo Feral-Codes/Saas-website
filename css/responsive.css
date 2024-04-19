@@ -116,7 +116,10 @@
    }
 
    /* key-benefits */
-   .key-card-container { min-width: 35%; }
+   section.key-benefits { margin: 12rem 0; }
+   .card-container {
+      margin: 2rem;
+   }
 
    /* front-banner */
    .banner-wrapper {
@@ -132,6 +135,15 @@
 
    .sample-banner { width: 100%; }
    .banner-one-container { float: none; }
+
+   /* dots on dots */
+   .line {
+      width: var(--size-50);
+   }
+
+   /* .hidden-line {
+      display: none;
+   } */
 
 
 

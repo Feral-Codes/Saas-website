@@ -173,7 +173,7 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 }
 
 /* key benefits */
-section.key-benefits { padding: 10em 0; }
+section.key-benefits { margin: 10em 0; }
 
 .key-benefits .block-text,
 .why-front .block-text,
@@ -184,7 +184,6 @@ section.key-benefits { padding: 10em 0; }
 .card-container {
    display: flex;
    flex-wrap: wrap;
-   align-items: center;
    justify-content: center;
    gap: 2rem;
    margin-top: 5rem ;
@@ -193,12 +192,17 @@ section.key-benefits { padding: 10em 0; }
 .key-card-container {
    display: flex;
    flex-direction: column;
-   padding: 1rem;
-   width: 18%;
+   padding: 1.5rem;
+   /* width: 18%; */
    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.5);
 }
 
-.key-image { width: 20%; }
+.key-image { 
+   width: 3rem; 
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
 
 .key-card-container h3 { color: black; }
 
