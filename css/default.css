@@ -126,18 +126,18 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
  /* media sizes for containers */
 @media (min-width: 1024px) {
   .container {
-    padding: 0 3rem;
+    margin: 0 3rem;
   }
 }
 
 @media (min-width: 1400px) {
   .container {
-    padding: 0 8rem;
+    margin: 0 8rem;
   }
 }
 
 @media (min-width: 1800px) {
   .container {
-    padding: 0 20rem;
+    margin: 0 20rem;
   }
 }
