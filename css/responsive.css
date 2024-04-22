@@ -174,11 +174,15 @@
    .pricing-benefits { margin-left: 1rem; }
 
    /* Hire us */
-   
+   .flex-wrapper { flex-direction: column; }
+   .testimonial {
+      flex-direction: row;
+      justify-content: space-between;
+   }
 
-
-
-} 
+   .top-testimonial hr {
+      width: 100%;
+   }
 
 @media (max-width: 724px) {
    .logo-2 {

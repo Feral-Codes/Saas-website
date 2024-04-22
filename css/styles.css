@@ -646,6 +646,7 @@ footer .links {
    flex: 1 2 auto;
    display: flex;
    justify-content: space-evenly;
+   flex-wrap: wrap;
 }
 
 .links li { margin: .55rem 0; }
