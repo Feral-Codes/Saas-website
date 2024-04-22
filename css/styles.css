@@ -674,10 +674,15 @@ footer hr {
    border-radius: 10px;
    display: grid;
    place-items: center;
+   transition: 1s;
 }
 
+/* .icons-ul a {
+   animation: 100ms;
+} */
+
 .icon-background:hover,
-.social-icons a:hover {
+.icon-background:hover > a{
    color: #DBE2E9;
    background-color: grey;
 }

@@ -148,6 +148,17 @@
       width: var(--size-50);
    }
 
+   /* hubspot profile */
+   .hub-spot .showcase {
+      flex-direction: column;
+      place-items: center;
+      text-align: center;
+   }
+
+   .right-showcase .content-wrapper {
+      margin: 0 auto;
+   }
+
 
 
 } 
