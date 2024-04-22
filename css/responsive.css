@@ -118,15 +118,13 @@
    }
 
    /* key-benefits */
-   section.key-benefits { margin: 12rem 0; }
+   section.key-benefits { margin-top: 12rem; }
    .card-container {
       margin: 2rem;
 
    }
 
-   .key-card-container {
-      min-width: 45%;
-   }
+   .key-card-container { min-width: 45%; }
 
    /* front-banner */
    .banner-wrapper {
@@ -144,9 +142,7 @@
    .banner-one-container { float: none; }
 
    /* dots on dots */
-   .line {
-      width: var(--size-50);
-   }
+   .line { width: var(--size-50); }
 
    /* hubspot profile */
    .hub-spot .showcase {
@@ -155,9 +151,30 @@
       text-align: center;
    }
 
-   .right-showcase .content-wrapper {
-      margin: 0 auto;
+   .right-showcase .content-wrapper { margin: 0 auto; }
+   .section-spacing { padding: 2em 0; }
+
+   /* pricing */
+   .main-wrapper {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: none;
    }
+
+   .price-card { max-width: 100%; }
+   .price-card br { display: none; }
+   .price-card p {font-size: var(--size-20);}
+   .price { justify-content: center; }
+
+   .btn-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .pricing-benefits { margin-left: 1rem; }
+
+   /* Hire us */
+   
 
 
 
