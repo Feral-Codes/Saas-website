@@ -624,11 +624,12 @@ form textarea {
 /* footer */
 .flex-wrap {
    display: flex;
+   justify-content: space-evenly;
    gap: 1rem;
 }
 
 .front-info img { 
-   width: 10rem; 
+   width: 8rem; 
    margin-bottom: 1rem;
 }
 
@@ -643,7 +644,7 @@ form textarea {
 .phone p:hover { color: var(--font-color-blue) }
 
 footer .links {
-   flex: 1 2 auto;
+   flex: 1 1 auto;
    display: flex;
    justify-content: space-evenly;
    flex-wrap: wrap;

@@ -180,9 +180,15 @@
       justify-content: space-between;
    }
 
-   .top-testimonial hr {
-      width: 100%;
+   .top-testimonial hr { width: 100%; }
+
+   /* footer */
+   footer .links {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-left: 3rem;
    }
+}
 
 @media (max-width: 724px) {
    .logo-2 {
