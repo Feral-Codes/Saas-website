@@ -290,7 +290,7 @@ section.key-benefits { margin: 10em 0; }
 
 
 .line {
-   width: var(--size-100);
+   width: 5.625rem;
    height: 0.125rem;
    background-color: var(--font-color-contrast);
 }
@@ -624,8 +624,8 @@ form textarea {
 /* footer */
 .flex-wrap {
    display: flex;
-   justify-content: space-evenly;
-   gap: 1rem;
+   justify-content: space-between;
+   gap: 2rem;
 }
 
 .front-info img { 
@@ -649,6 +649,8 @@ footer .links {
    justify-content: space-evenly;
    flex-wrap: wrap;
 }
+
+.links-basis { flex-basis: 150px;}
 
 .links li { margin: .55rem 0; }
 

@@ -183,11 +183,7 @@
    .top-testimonial hr { width: 100%; }
 
    /* footer */
-   footer .links {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      margin-left: 3rem;
-   }
+   .links-basis { flex-basis: 225px; }
 }
 
 @media (max-width: 724px) {
