@@ -132,7 +132,7 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 
 @media (min-width: 1024px) {
   .container {
-    padding: 0 3rem;
+    margin: 0 3rem;
   }
 }
 
