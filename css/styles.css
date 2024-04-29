@@ -15,7 +15,7 @@ header {
    position: fixed;
    background-color: white;
    box-shadow: 0 0 10px rgba(106, 106, 106 , 1 );
-   width: 100%; 
+   /* width: 64.3%;  */
    z-index: 20;
    padding: .225em;
 }
@@ -183,7 +183,6 @@ section.key-benefits { margin: 10em 0; }
 
 .card-container {
    display: flex;
-   flex-wrap: wrap;
    justify-content: center;
    gap: 1.5rem;
    margin-top: 5rem ;
@@ -192,6 +191,7 @@ section.key-benefits { margin: 10em 0; }
 .key-card-container {
    display: flex;
    flex-direction: column;
+   /* flex: 1 1 300px; */
    padding: 1.5rem;
    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.5);
 }
@@ -201,17 +201,14 @@ section.key-benefits { margin: 10em 0; }
    display: flex;
    align-items: center;
    gap: 1rem;
-   flex: 1 1 auto;
 }
 
 .key-card-container h3 { 
    color: black;
-   flex: 1 1 auto;
 }
 
 .key-card-container p {
    margin-bottom: 1.225rem;
-   flex: 1 1 auto;
 }
  
 .key-card-container:hover {
@@ -628,8 +625,8 @@ form textarea {
 /* footer */
 .flex-wrap {
    display: flex;
-   justify-content: space-between;
-   gap: 2rem;
+   justify-content: space-evenly;
+   gap: 3rem;
 }
 
 .front-info img { 
@@ -648,13 +645,11 @@ form textarea {
 .phone p:hover { color: var(--font-color-blue) }
 
 footer .links {
-   flex: 1 1 auto;
    display: flex;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 2rem;
+   flex: 1 1 auto;
 }
-
-.links-basis { flex-basis: 150px;}
 
 .links li { margin: .55rem 0; }
 

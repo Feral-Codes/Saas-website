@@ -124,7 +124,11 @@
 
    }
 
-   .key-card-container { flex-basis: 300px;}
+   .card-container { flex-wrap: wrap; }
+
+   .key-card-container { 
+      flex-basis: 300px;
+   }
 
    /* front-banner */
    .banner-wrapper {
@@ -183,7 +187,8 @@
    .top-testimonial hr { width: 100%; }
 
    /* footer */
-   .links-basis { flex-basis: 225px; }
+   .links { flex-wrap: wrap;}
+   .links-basis { flex-basis: 200px; }
 }
 
 @media (max-width: 724px) {
