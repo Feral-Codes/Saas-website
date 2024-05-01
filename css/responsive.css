@@ -1,4 +1,5 @@
 @media (max-width: 1023px) {
+   /* responsive nav */
    .hamburger { 
       display: block;
       margin-right: 1rem;
@@ -14,14 +15,9 @@
       transform: translateY(-8px) rotate(-45deg);
    } 
 
-   .navbar.sticky {
-      padding: var(--size-20) var(--size-10) 0 var(--size-10);
-      top: 35px;
-  }
-
   .nav-menu {
       position: fixed;
-      left: 100%;
+      left: 150%;
       top: 90px;
       text-align: center;
       transition: 0.3s;
@@ -30,30 +26,30 @@
       z-index: 90;
   }  
 
+  .nav-btn {
+      position: fixed;
+      left: 150%;
+      top: 90px;
+   } 
    .nav-container.active {}
 
    .nav-container.active ul {
       display: flex ;
       justify-content: space-around;
+      padding-top: 2em;
   } 
 
     .nav-menu.active {
-      left: 4.375rem;
-      top: 83px;
-      padding: var(--size-30) var(--size-100);
-      border-top: 1px solid var(--font-color-light);
-      box-shadow: 10px 10px 20px var(--font-color-light);
-   }
-
-   .nav-menu.active a {
-      font-size: var(--size-18);
-   }
-
-   .nav-btn {
       position: fixed;
-      left: 100%;
-      top: 90px;
-   } 
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: min(1400px, 95%);
+      height: 300px;
+      border-top: 1px solid #666;
+      box-shadow: 0 0 10px rgba(106, 106, 106 , 1 );
+   }
+    
 
    /* header */
    .bottom-header {
@@ -175,14 +171,7 @@
 
    .pricing-benefits { margin-left: 1rem; }
 
-   /* Hire us */
-   .flex-wrapper { flex-direction: column; }
-   .testimonial {
-      flex-direction: row;
-      justify-content: space-between;
-   }
-
-   .top-testimonial hr { width: 100%; }
+   
 
    /* footer */
    .links { flex-wrap: wrap;}
@@ -203,3 +192,18 @@
    }
 }
    
+@media (max-width: 1282px) {
+   /* Hire us */
+   .flex-wrapper { flex-direction: column; }
+
+   .testimonial {
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem;
+   }
+   
+
+   .top-testimonial hr { width: 100%; }
+}
+   
+

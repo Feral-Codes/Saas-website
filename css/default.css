@@ -123,16 +123,18 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 
  @media (min-width: 1024px) {
   .container,
-  .navbar{
-    max-width: min(1400px, 80%);
+  .navbar,
+  .navbar.sticky{
+    max-width: min(1400px, 90%);
     margin: 0 auto;
   }
 }
 
 @media (max-width: 1023px) {
   .container,
-  .navbar {
-    max-width: min(768px, 80%);
+  .navbar,
+  .navbar.sticky {
+    max-width: min(900px, 90%);
     margin: 0 auto;
   }
 }

@@ -14,14 +14,14 @@ header {
 
 .navbar.sticky {
    position: fixed;
-   top: 3%;
+   top: 4%;
    left: 50%;
    transform: translate(-50%, -50%);
-   width: 100%;
+   width: min(1400px, 90%);
    background-color: white;
    box-shadow: 0 0 10px rgba(106, 106, 106 , 1 );
    z-index: 20;
-   padding: .35em .225em;
+   padding: .5em .225em;
 }
 
 .navbar.sticky .website-logo-container {
@@ -567,7 +567,7 @@ section.key-benefits { margin: 10em 0; }
 form { 
    background-color: white;
    border-radius: 18px;
-   width: 60%;
+   width: 70%;
    margin: 0 auto;
 }
 
@@ -582,7 +582,7 @@ form {
 
 .form-top {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: auto auto;
    gap: 1rem;
    margin-bottom: 1rem;
 }

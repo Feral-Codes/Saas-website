@@ -20,7 +20,7 @@
                   <img class="website-logo" src="/assets/project_logo/logo.svg" alt="website-logo">
                </div>
                <div class="nav-container">
-                  <ul class="nav-menu">
+                  <ul class="nav-menu" id="scroll--nav">
                      <li class="nav-item"><a href="#home" class="anchor-hover">Home</a></li>
                      <li class="nav-item"><a href="#features" class="anchor-hover">Features</a></li>
                      <li class="nav-item"><a href="#learn" class="anchor-hover">Learn</a></li>
@@ -560,16 +560,18 @@
       <script>
          const nav=document.getElementById("topNav");
          window.onscroll = function (){
-           if (window.pageYOffset > 100) {
+           if (window.pageYOffset > 47) {
              nav.classList.add ("sticky");
            } else {
              nav.classList.remove("sticky");
            }
          }
 
+         
          const hamburger = document.querySelector(".hamburger");
          const navMenu = document.querySelector(".nav-menu");
          const navContainer = document.querySelector(".nav-container");
+         
 
          hamburger.addEventListener("click", () => {
             hamburger.classList.toggle("active");
