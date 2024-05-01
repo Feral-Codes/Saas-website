@@ -576,16 +576,26 @@
          }
       });
 
+      window.addEventListener('scroll', function() {
+         const navBtn = document.querySelector('.nav-btn.active');
+         if (window.scrollY > 47 || document.documentElement.scrollTop > 50) {
+             mainNav.classList.add('scroll');
+         } else {
+             mainNav.classList.remove('scroll');
+         }
+      });
+
 
          const hamburger = document.querySelector(".hamburger");
          const navMenu = document.querySelector(".nav-menu");
          const navContainer = document.querySelector(".nav-container");
-         
+         const navBtn = document.querySelector(".nav-btn");
 
          hamburger.addEventListener("click", () => {
             hamburger.classList.toggle("active");
             navMenu.classList.toggle("active");
             navContainer.classList.toggle("active");
+            navBtn.classList.toggle("active");
          })
 
          document.querySelectorAll (".nav-link").forEach(n => n.
@@ -593,6 +603,7 @@
             hamburger.classList.remove("active")
             navMenu.classList.remove("active")
             navContainer.classList.remove("active")
+            navBtn.classList.remove("active")
          }))
       </script>
 

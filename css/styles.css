@@ -24,13 +24,9 @@ header {
    padding: .5em .225em;
 }
 
-.navbar.sticky .website-logo-container {
-   width: 10%;
-}
+.navbar.sticky .website-logo-container { width: 10%; }
 
-.website-logo-container {
-   width: 18%;
-}
+.website-logo-container { width: 18%; }
 
 .nav-container {
    display: flex;
@@ -43,9 +39,7 @@ header {
    gap: 1.25rem;
 }
 
-.nav-item a {
-   font-size: 1.125rem;
-}
+.nav-item a { font-size: 1.125rem; }
 
 a.anchor-hover:hover { color: var(--font-color-blue); }
 
@@ -78,13 +72,9 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
    font-weight: 600;
 }
 
-.header-buttons {
-   margin-top: 1rem;
-}
+.header-buttons { margin-top: 1rem; }
 
-.header-buttons .btn {
-   margin-right: 1rem;
-}
+.header-buttons .btn { margin-right: 1rem; }
 
 .blue-link { 
    color: var(--font-color-blue);
@@ -93,9 +83,7 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 
 /* company-logos  */
 
-.company-icons-container {
-   position: relative;
-}
+.company-icons-container { position: relative; }
 
 .logo-circle {
    width: 5rem;
@@ -206,13 +194,9 @@ section.key-benefits { margin: 10em 0; }
    gap: 1rem;
 }
 
-.key-card-container h3 { 
-   color: black;
-}
+.key-card-container h3 { color: black; }
 
-.key-card-container p {
-   margin-bottom: 1.225rem;
-}
+.key-card-container p { margin-bottom: 1.225rem; }
  
 .key-card-container:hover {
    transform: translate(-10px, -10px);
@@ -260,9 +244,7 @@ section.key-benefits { margin: 10em 0; }
 
 /* dots on dots */
 .section-spacing { padding: 4em 0; }
-.dots {
-   margin: 3rem 0;
-}
+.dots { margin: 3rem 0; }
 
 .big-dot {
    width: 3.125rem;
@@ -434,9 +416,7 @@ section.key-benefits { margin: 10em 0; }
 
 /* pricing */
 .pricing .block-text h2,
-.pricing .block-text p {
-   margin-bottom: .75rem;
-}
+.pricing .block-text p { margin-bottom: .75rem; }
 
 .main-wrapper {
    display: grid;
@@ -560,9 +540,7 @@ section.key-benefits { margin: 10em 0; }
 }
 
 .testimonial-img:has(+ .testimonial-img:hover),
-.testimonial-img:hover + .testimonial-img {
-   scale: 1.25;
-}
+.testimonial-img:hover + .testimonial-img { scale: 1.25; }
 /* form */
 form { 
    background-color: white;
@@ -576,9 +554,7 @@ form {
    padding: 1em;
 }
 
-.form-container h3 {
-   color: black;
-}
+.form-container h3 { color: black; }
 
 .form-top {
    display: grid;
@@ -656,9 +632,7 @@ footer .links {
 
 .links li { margin: .55rem 0; }
 
-footer hr {
-   margin: 2em 0;
-}
+footer hr { margin: 2em 0; }
 
 .bottom-uls {
    display: flex;
