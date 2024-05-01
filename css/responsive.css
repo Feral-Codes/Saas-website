@@ -1,5 +1,5 @@
 @media (max-width: 1023px) {
-   .hamburger { 
+   /* .hamburger { 
       display: block;
       margin-right: 1rem;
    }
@@ -12,7 +12,7 @@
 
    .hamburger.active .bar:nth-child(3) { 
       transform: translateY(-8px) rotate(-45deg);
-   }
+   } */
 
   /* .navbar.sticky {
       padding: var(--size-20) var(--size-10) 0 var(--size-10);

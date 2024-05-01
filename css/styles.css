@@ -8,14 +8,20 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   max-width: 1160px;
+   margin: 0 auto;
 }
 
 .navbar.sticky {
    position: fixed;
+   top: 3%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
    background-color: white;
    box-shadow: 0 0 10px rgba(106, 106, 106 , 1 );
    z-index: 20;
-   padding: .225em;
+   padding: .35em .225em;
 }
 
 .navbar.sticky .website-logo-container {
