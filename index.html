@@ -567,7 +567,16 @@
            }
          }
 
-         
+         window.addEventListener('scroll', function() {
+         const mainNav = document.querySelector('.nav-menu.active');
+         if (window.scrollY > 47 || document.documentElement.scrollTop > 50) {
+             mainNav.classList.add('scroll');
+         } else {
+             mainNav.classList.remove('scroll');
+         }
+      });
+
+
          const hamburger = document.querySelector(".hamburger");
          const navMenu = document.querySelector(".nav-menu");
          const navContainer = document.querySelector(".nav-container");
