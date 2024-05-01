@@ -32,11 +32,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.container {
-  width: 1160px;
-  margin: 0 auto;
-}
  
 *,
 ::before,
@@ -127,19 +122,10 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 
 
  @media (min-width: 1024px) {
-  /* .container, {
-    margin: 0 3rem;
-  } */
+  .container {
+    width: 1400px;
+    margin: 0 auto;
+  }
 }
 
-@media (min-width: 1400px) {
-  /* .container {
-    margin: 0 8rem;
-  } */
-}
 
-@media (min-width: 1800px) {
-  /* .container {
-    margin: 0 12rem;
-  } */
-}
