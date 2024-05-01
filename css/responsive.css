@@ -23,13 +23,14 @@
       transition: 0.3s;
       background-color: white;
       max-width: 100%;
-      z-index: 90;
+      z-index: 200;
   }  
 
   .nav-btn {
       position: fixed;
       left: 150%;
       top: 90px;
+      z-index: 210;
    } 
 
    .nav-container.active ul {
@@ -60,7 +61,7 @@
       top: 450%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 100;
+      z-index: 210;
    }
 
    .nav-btn.active.scroll {
@@ -68,7 +69,7 @@
       top: 35%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 100;
+      z-index: 200;
    }
     
 
@@ -91,49 +92,42 @@
    }
 
    .logo-1 {
-      position: absolute;
       top: 3rem;
       left: 8rem; 
    }
    
    .logo-2 {
-      position: absolute;
       top: 3.225rem;
       left: 20rem;
    }
    
    .logo-3 {
-      position: absolute;
       top: 3.25rem;
-      right: 10rem;
+      right: 5rem;
    }
    
    .logo-4 {
-      position: absolute;
       top: 9.5rem;
       left: 8rem;
    }
    
    .logo-5 {
-      position: absolute;
       top: 9rem;
       right: 15rem;
    }
    
    .logo-6 {
-      position: absolute;
       top: 15rem;
       left: 16.5rem;
    }
    
    .logo-7 {
-      position: absolute;
       top: 15.225rem;
       right: 10rem;
    }
 
    /* key-benefits */
-   section.key-benefits { margin-top: 12rem; }
+   section.key-benefits { padding-top: 8rem; }
    .card-container {
       margin: 2rem;
 
@@ -142,7 +136,7 @@
    .card-container { flex-wrap: wrap; }
 
    .key-card-container { 
-      flex-basis: 250px;
+      flex-basis: 275px;
    }
 
    /* front-banner */
@@ -199,20 +193,6 @@
    .links-basis { flex-basis: 200px; }
 }
 
-@media (max-width: 724px) {
-   .logo-2 {
-      position: absolute;
-      top: 3.225rem;
-      left: 14.225rem;
-   }
-
-   .logo-6 {
-      position: absolute;
-      top: 15rem;
-      left: 13.5rem;
-   }
-}
-   
 @media (max-width: 1282px) {
    /* Hire us */
    .flex-wrapper { flex-direction: column; }
@@ -226,5 +206,104 @@
 
    .top-testimonial hr { width: 100%; }
 }
+
+@media (max-width: 860px) {
+   .logo-2 {
+      position: absolute;
+      top: 3.225rem;
+      left: 16.225rem;
+   }
+
+   .logo-6 {
+      position: absolute;
+      top: 15rem;
+      left: 14.5rem;
+   }
+}
+
+@media (max-width: 767px) {
+   /* key benefits */
+   
+   .card-container { flex-direction: column; }
+}
+
+
+
+/* logo adjustments */
+@media (max-width: 712px) {
+   .logo-1 {
+      top: 2rem;
+      left: 0rem; 
+   }
+   
+   .logo-2 {
+      top: 3rem;
+      left: 12rem;
+   }
+   
+   .logo-3 {
+      top: 2rem;
+      right: 2rem;
+   }
+   
+   .logo-4 {
+      bottom: 6rem;
+      left: 2rem;
+   }
+   
+   .logo-5 {
+      bottom: 6rem;
+      right: 12rem;
+   }
+   
+   .logo-6 {
+      bottom: -3rem;
+      left: 12rem;
+   }
+   
+   .logo-7 {
+      bottom: -6rem;
+      right: 5rem;
+   }
+}
+
+@media (max-width: 520px) {
+   .logo-1 {
+      top: 1rem;
+      left: 0rem; 
+   }
+   
+   .logo-2 {
+      top: 1rem;
+      left: 7rem;
+   }
+   
+   .logo-3 {
+      top: 1rem;
+      right: 1rem;
+   }
+   
+   .logo-4 {
+      bottom: 5rem;
+      left: 1rem;
+   }
+   
+   .logo-5 {
+      bottom: 5rem;
+      right: 6.225rem;
+   }
+   
+   .logo-6 {
+      bottom: -2rem;
+      left: 7rem;
+   }
+   
+   .logo-7 {
+      bottom: -5rem;
+      right: 1.225rem;
+   }
+}
+   
+
    
 

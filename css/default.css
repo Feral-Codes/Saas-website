@@ -133,8 +133,19 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 @media (max-width: 1023px) {
   .container,
   .navbar,
-  .navbar.sticky {
+  .navbar.sticky,
+  .nav-menu.active {
     max-width: min(900px, 90%);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container,
+  .navbar,
+  .navbar.sticky,
+  .nav-menu.active {
+    max-width: min(760, 98%);
     margin: 0 auto;
   }
 }

@@ -10,6 +10,7 @@ header {
    align-items: center;
    max-width: 1400px;
    margin: 0 auto;
+   z-index: 100;
 }
 
 .navbar.sticky {
@@ -20,7 +21,7 @@ header {
    width: min(1400px, 90%);
    background-color: white;
    box-shadow: 0 0 10px rgba(106, 106, 106 , 1 );
-   z-index: 20;
+   z-index: 100;
    padding: .5em .225em;
 }
 
@@ -79,6 +80,7 @@ a.anchor-hover:hover { color: var(--font-color-blue); }
 .blue-link { 
    color: var(--font-color-blue);
    font-weight: 600;
+   width: 35%;
 }
 
 /* company-logos  */
@@ -310,7 +312,7 @@ section.key-benefits { margin: 10em 0; }
    position: absolute;
    top: 50%;
    left: 50%;
-   z-index: 100;
+   z-index: 20;
    display: grid;
    place-items: center;
    box-shadow: 0px 0px 10px rgba(106, 106, 106 , 1 );
