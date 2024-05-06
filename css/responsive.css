@@ -56,16 +56,14 @@
    }
 
    .nav-btn.active {
-      top: 35%;
+      top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 300;
    }
 
-   .nav-btn.active.scroll {
-      bottom: 500px;
-      left: 50%;
-      transform: translate(-50%, -50%);
+   .nav-btn.active.scroll__btn {
+      top: 450%;
    }
     
 
@@ -218,6 +216,20 @@
 }
 
 @media (max-width: 767px) {
+   .nav-menu{
+      flex-direction: column;
+      gap: 0.025rem;
+      padding-bottom: 3em;
+   }
+
+   .nav-btn.active {
+      top: 54%;
+   }
+
+   .nav-btn.active.scroll__btn {
+      top: 700%;
+   }
+
    /* key benefits */
    .card-container { flex-direction: column; }
 

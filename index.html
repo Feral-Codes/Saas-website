@@ -579,13 +579,12 @@
          window.addEventListener('scroll', function() {
             const navBtn = document.querySelector('.nav-btn.active');
             if (window.scrollY > 47 || document.documentElement.scrollTop > 50) {
-                mainNav.classList.add('scroll');
+                navBtn.classList.add('scroll__btn');
             } else {
-                mainNav.classList.remove('scroll');
+                navBtn.classList.remove('scroll__btn');
             }
          
          });
-
 
          const hamburger = document.querySelector(".hamburger");
          const navMenu = document.querySelector(".nav-menu");
