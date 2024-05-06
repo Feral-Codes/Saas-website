@@ -345,32 +345,31 @@ section.key-benefits { margin: 10em 0; }
 .hub-spot .showcase {
    display: flex;
    justify-content: space-around;
+   gap: 3rem;
 }
 
-.profile-container {
+/* .profile-container {
    display: flex;
    justify-content: flex-start;
    align-items: center;
-}
+} */
 
-.img-container {
+.profile-container {
+   max-width: 550px;
    position: relative;
-   min-width: 31.25rem;
-   min-height: 37.5rem;
 }
 
 .abstract-dots {
-   width: 15.625rem;
-   height: 15.625rem;
    position: absolute;
-   top: 6.25rem;
+   left: 8%;
+   bottom: -10%;
+   max-width: 48%; 
 }
 
 .woman-three {
-   width: 25rem;
-   height: 31.25rem;
-   position: absolute;
-   left: 1.875rem;
+   max-width: 85%;
+   float: right;
+   
 }
 
 .right-showcase { padding-top: var(--size-50); }
